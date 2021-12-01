@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App/App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Meals from './components/Meals/Meals';
+import AddMeal from './components/AddMeal/AddMeal';
+import Navbar from './components/Navbar/Navbar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+          <Navbar />
+          <Routes>
+              <Route path="/" element={<App/>}/>
+              <Route path="meals" element={<Meals/>}/>
+              <Route path="add-meal" element={<AddMeal/>}/>
+          </Routes>
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
