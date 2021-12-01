@@ -1,0 +1,12 @@
+.meals {
+    display: flex;
+    flex-direction: column;
+}
+
+.meals-counter {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    padding: 8px;
+    font-size: 24px;
+}

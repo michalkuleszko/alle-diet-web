@@ -1,0 +1,65 @@
+input {
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.meal-form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.meal-form {
+    width: 400px;
+    padding: 16px;
+}
+
+.meal-form-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.meal-name {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.meal-ingredients {
+
+}
+
+.meal-ingredient {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding: 4px;
+}
+
+.meal-ingredients-controls {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.meal-ingredients-controls > button {
+    margin-left: 4px;
+}
+
+.meal-ingredient span {
+    width: 10%;
+}
+
+.meal-ingredient input {
+    width: 40%;
+    margin-right: 4px;
+}
+
+.meal-ingredient button {
+    width: 10%;
+}
